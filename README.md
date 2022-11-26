@@ -15,9 +15,20 @@ Kelompok A02
 
 Berikut penggabungan subnet dengan metode CIDR dimulai dari subnet terjauh
 
+![cidr0](img/cidr-0.jpg)
+![cidr1](img/cidr-1.jpg)
+![cidr2](img/cidr-2.jpg)
+![cidr3](img/cidr-3.jpg)
+![cidr4](img/cidr-4.jpg)
+![cidr5](img/cidr-5.jpg)
+![cidr6](img/cidr-6.jpg)
+![cidr7](img/cidr-7.jpg)
+
 ### Penghitungan IP
 
 Berikut pohon subnet yang dibentuk sesuai dengan penggabungan subnet sebelumnya
+
+![cidr8](img/cidr-8.jpg)
 
 Didapat tabel data setiap subnet, yakni NID dan Netmask
 
@@ -42,10 +53,9 @@ A16|10.0.160.0|255.255.255.252
 A17|10.0.162.0|255.255.254.0
 A18|10.0.64.0|255.255.255.252
 
-
-
-
 ### Topologi GNS3
+
+![cidr9](img/cidr-9.png)
 
 ### Subnetting
 
@@ -418,6 +428,10 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.0.160.1
 
 Ping `Guideau` to `The Witch`
 
+![cidr10](img/cidr-10.png)
+
 Ping  `Guideau` to `google.com`
+
+![cidr11](img/cidr-11.png)
 
 ## Kendala
