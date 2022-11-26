@@ -6,7 +6,7 @@ Kelompok A02
 
 ## Soal
 ### Topologi
-![Gambar Topologi](gambar/soal shift 4.1.png)
+![Gambar Topologi](soal_shift_4.1.png)
 ## VLSM
 
 ## CIDR
