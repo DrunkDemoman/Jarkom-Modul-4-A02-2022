@@ -9,6 +9,40 @@ Kelompok A02
 ![Gambar Topologi](soal_shift_4.1.png)
 ## VLSM - CPT
 
+### Penghitungan IP
+
+![vlsm-0](img/vlsm-0.jpg)
+
+Setelah dihitung jumlah IP dari subnet-subnet di atas, didapat tabel berikut
+
+Subnet | Jumlah IP | Netmask
+:---: | :---: | :---:
+A1|1001|/22
+A2|2|/30
+A3|251|/24
+A4|2|/30
+A5|51|/26
+A6|2|/30
+A7|2|/30
+A8|121|/25
+A9|2|/30
+A10|212|/24
+A11|2|/30
+A12|501|/23
+A13|2|/30
+A14|71|/25
+A15|121|/25
+A16|2|/30
+A17|271|/23
+A18|2|/30
+Total|2618|/20
+
+Kemudian dibentuk pohon IP dengan `10.0.0.0 /20` sebagai rootnya
+
+![vlsm-1](img/vlsm-1.jpg)
+
+Dari pohon IP tersebut, didapat NID dan Netmask setiap subnet
+
 ## CIDR - GNS3
 
 ### Penggabungan Subnet
@@ -33,7 +67,7 @@ Berikut pohon subnet yang dibentuk sesuai dengan penggabungan subnet sebelumnya
 Didapat tabel data setiap subnet, yakni NID dan Netmask
 
 Subnet | Network ID | Netmask
-|:---:|:---:|:---:|
+:---: | :---: | :---:
 A1|10.0.4.0|255.255.252.0
 A2|10.0.1.0|255.255.255.252
 A3|10.0.0.0|255.255.255.0
@@ -52,6 +86,7 @@ A15|10.0.136.128|255.255.255.128
 A16|10.0.160.0|255.255.255.252
 A17|10.0.162.0|255.255.254.0
 A18|10.0.64.0|255.255.255.252
+
 
 ### Topologi GNS3
 
