@@ -9,20 +9,65 @@ Kelompok A02
 ![Gambar Topologi](soal_shift_4.1.png)
 ## VLSM - CPT
 
+### Penghitungan IP
+
+![vlsm-0](img/vlsm-0.jpg)
+
+Setelah dihitung jumlah IP dari subnet-subnet di atas, didapat tabel berikut
+
+Subnet | Jumlah IP | Netmask
+:---: | :---: | :---:
+A1|1001|/22
+A2|2|/30
+A3|251|/24
+A4|2|/30
+A5|51|/26
+A6|2|/30
+A7|2|/30
+A8|121|/25
+A9|2|/30
+A10|212|/24
+A11|2|/30
+A12|501|/23
+A13|2|/30
+A14|71|/25
+A15|121|/25
+A16|2|/30
+A17|271|/23
+A18|2|/30
+Total|2618|/20
+
+Kemudian dibentuk pohon IP dengan `10.0.0.0 /20` sebagai rootnya
+
+![vlsm-1](img/vlsm-1.jpg)
+
+Dari pohon IP tersebut, didapat NID dan Netmask setiap subnet
+
 ## CIDR - GNS3
 
 ### Penggabungan Subnet
 
 Berikut penggabungan subnet dengan metode CIDR dimulai dari subnet terjauh
 
+![cidr0](img/cidr-0.jpg)
+![cidr1](img/cidr-1.jpg)
+![cidr2](img/cidr-2.jpg)
+![cidr3](img/cidr-3.jpg)
+![cidr4](img/cidr-4.jpg)
+![cidr5](img/cidr-5.jpg)
+![cidr6](img/cidr-6.jpg)
+![cidr7](img/cidr-7.jpg)
+
 ### Penghitungan IP
 
 Berikut pohon subnet yang dibentuk sesuai dengan penggabungan subnet sebelumnya
 
+![cidr8](img/cidr-8.jpg)
+
 Didapat tabel data setiap subnet, yakni NID dan Netmask
 
 Subnet | Network ID | Netmask
-|:---:|:---:|:---:|
+:---: | :---: | :---:
 A1|10.0.4.0|255.255.252.0
 A2|10.0.1.0|255.255.255.252
 A3|10.0.0.0|255.255.255.0
@@ -43,9 +88,9 @@ A17|10.0.162.0|255.255.254.0
 A18|10.0.64.0|255.255.255.252
 
 
-
-
 ### Topologi GNS3
+
+![cidr9](img/cidr-9.png)
 
 ### Subnetting
 
@@ -418,6 +463,10 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.0.160.1
 
 Ping `Guideau` to `The Witch`
 
+![cidr10](img/cidr-10.png)
+
 Ping  `Guideau` to `google.com`
+
+![cidr11](img/cidr-11.png)
 
 ## Kendala
