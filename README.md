@@ -5,7 +5,8 @@ Kelompok A02
 + Bimantara Tito Wahyudi - 5025201227
 
 ## Soal
-
+### Topologi
+![Gambar Topologi](gambar/soal shift 4.1.png)
 ## VLSM
 
 ## CIDR
